@@ -103,6 +103,15 @@ Se sustituye la repeticion de la variable por un +=
 
 <h4> Para realizar una resta funciona igual, solo se sustituye el operador += por -= Igualmente ocurre con la multiplicacion, que se utiliza el operador *= y la division utiliza /=</h4>
 
+<h1>Cadenas de caracteres</h1>
+<p>Las cadenas de caracteres se definen por el uso de comillas, sean dobles "" o simples ''. Debe usarse el mismo tipo para cerrar y abrir</p>
+
+<h2>Escapar comillas</h2>
+<p>Si una cadena de caracteres lleva comillas dentro de ellas, JS podria detectar un error</p>
+<p>Para escaparlas, se usa barra invertida antes de las comillas \" </p>
+<p>Se puede evitar el error utilizando comillas simples para abrir la cadena y comillas dobles dentro de la cadena para encerrar la expresion. </p>
+<p> var cadenaEjemplo = 'Mi cadena es "un ejemplo"' </p>
+
 
 
 <h1>Comandos</h1>
@@ -187,6 +196,12 @@ Se sustituye la repeticion de la variable por un +=
 
     x -= 3;
     console.log(x);
+
+    var miCadena = "Soy una cadena de caracteres \"con comillas\" "
+    console.log(miCadena);
+
+    var cadenaEjemplo = 'Mi cadena es "un ejemplo"'
+    console.log(cadenaEjemplo);
 
 
 </script>
