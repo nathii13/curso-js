@@ -165,17 +165,34 @@ Se sustituye la repeticion de la variable por un +=
 <p>Para acceder a otros caracteres de derecha a iz, se va restando el indice. Ejm: -2 para el penultimo caracter y asi sucesivamente.</p>
 
 <h2>Arreglos Arrays</h2>
-<p>Los arreglos son "listas" de datos agrupadas de manera relacional. Se llaman de igual manera como una variable pero se encierran en brackets [].</p>
+<p>Los arreglos son "listas" de datos agrupadas de manera relacional. Se llaman de igual manera como una variable pero se encierran en brackets []. Cada elemento debe separarse por una coma y un espacio</p>
 <p>Ejm: var arreglo = ["John", 24]</p>
 
 <h3>Arreglos anidados:</h3>
 <p>Se pueden anidar arreglos dentro de un arreglo principal. Se colocan dentro de brackets dentro de un bracket principal</p>
 <p>Ejm: var listaDeProductos = [["Camisa", 10, "s110"], ["Celular", 989, "s23u"], ["Zapatos", 35, "t690"]]</p>
 
+<h3>¿Como acceder a elementos de un Array?</h3>
+<p>Se pueden llamar con el indice del elemento encerrado entre brackets []</p>
+<p>ejemplo: var esteArreglo = [15, 29, 54,8]</p>
+<p>console.log(esteArreglo[0])</p>
+<p>console.log(esteArreglo[1])</p>
+<p>console.log(esteArreglo[2])</p>
+
+<h3>Modificar elementos de un arreglo</h3>
+<p>Simplemente se le reasigna el valor llamnndo la variable y el indice a cambiar</p>
+<p>ejm: var arregloDos = [10, 56, 13]</p>
+<p>arregloDos[0] = 27</p>
+<p>console.log(arregloDos)</p>
+
+<h3>Acceder a arreglos multidimensionales</h3>
+<p>Un arreglo aninado es un multidimensional. Para poder acceder a ellos se crea la variable con los arreglos anidados y con console.log se llama el indice del array y luego el indice del elemento interno. Ambos entre brackets [] </p>
+<p>var arregloMulti= [[90, 56, 78], [13, 29, 09], [25, 27, 15]];</p>
+<p>                        0              1             2</p>
+<p>console.log(arregloMulti[2][2]);</p>
 
 <h1>Comandos</h1>
 <p> cmd + d= Se clica continuamente para seleccionar los mismos textos y poder hacer el reemplazo del texto de un solo</p>
-
 
 
 <script>
@@ -305,6 +322,17 @@ Se sustituye la repeticion de la variable por un +=
     var listaDeProductos = [["Camisa", 10, "s110"], ["Celular", 989, "s23u"], ["Zapatos", 35, "t690"]]
     console.log(listaDeProductos);
 
+    var esteArreglo = [15, 29, 54.8];
+    console.log(esteArreglo[0]);
+    console.log(esteArreglo[1]);
+    console.log(esteArreglo[2]);
+
+    var arregloDos = [10, 56, 13];
+    arregloDos[0] = 27;
+    console.log(arregloDos);
+
+    var arregloMulti= [[90, 56, 78], [13, 29, 09], [25, 27, 15]];
+    console.log(arregloMulti[1][2]);
 
 
 </script>
