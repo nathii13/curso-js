@@ -199,11 +199,27 @@ Se sustituye la repeticion de la variable por un +=
 <p>console.log(estaciones)</p>
 
 <h2>.pop</h2>
-<p>.pop se utiliza para eliminar el ultimo elemento de un arreglo</p>
+<p>.pop se utiliza para eliminar el ultimo elemento de un arreglo. Tambien se puede llamar a elemento eliminado asignandolo a una variable y colocandolo como variableInicial.pop()</p>
 <p>var estaciones</p>
 <p>estaciones = ["Invierno", "Otoño", "Primavera", "Verano"]</p>
 <p>estaciones.pop();</p>
 <p>console.log(estaciones)</p>
+
+<p>var estaciones;</p>
+<p>var estacion;</p>
+<p>estaciones = ["Invierno", "Otoño", "Primavera", "Verano"]</p>
+<p>estacion = estaciones.pop()</p>
+
+<p>console.log(estaciones)</p>
+<p>console.log(estacion)</p>
+
+<h2>.shift</h2>
+<p>Se utiliza para remover el primer elemento de un arreglo.</p>
+<p>var estaciones = ["Invierno", "Otoño", "Primavera", "Verano"]</p>
+<p>estaciones.shift();</p>
+<p>console.log(estaciones)</p>
+
+
 
 <h1>Comandos</h1>
 <p> cmd + d= Se clica continuamente para seleccionar los mismos textos y poder hacer el reemplazo del texto de un solo</p>
@@ -356,6 +372,21 @@ Se sustituye la repeticion de la variable por un +=
     estaciones = ["Invierno", "Otoño", "Primavera", "Verano"]
     estaciones.pop();
     console.log(estaciones);
+
+    var estaciones;
+    var estacion;
+    estaciones = ["Invierno", "Otoño", "Primavera", "Verano"]
+    estacion = estaciones.pop()
+
+    console.log(estaciones)
+    console.log(estacion)
+
+    var estaciones = ["Invierno", "Otoño", "Primavera", "Verano"]
+    estaciones.shift();
+    console.log(estaciones)
+
+
+
 
 
 </script>
