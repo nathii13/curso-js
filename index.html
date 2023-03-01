@@ -237,8 +237,10 @@ Se sustituye la repeticion de la variable por un +=
 
 <p>sumar (5, 6)------> 5 y 6 son los argumentos para utilizar en la función que darán como resultado 11</p>
 
+<h1>Variable Ambito Global</h1>
+<p>Es una variable que se puede utilizar en cualquier parte del programa porque está definida en el programa principal, no dentro de una función.</p>
 
-
+<h1>Variable Local</h1>
 
 <h1>Comandos</h1>
 <p> cmd + d= Se clica continuamente para seleccionar los mismos textos y poder hacer el reemplazo del texto de un solo</p>
@@ -438,5 +440,13 @@ mostrarTexto()
     }
 
     concatenarTresCadenas("Estoy", "aprendiendo", "Javascript")
+
+    var miVariableGlobal = 5
+
+    function funcionPrueba(){
+        console.log(miVariableGlobal);
+    }
+
+    funcionPrueba();
 
 </script>
