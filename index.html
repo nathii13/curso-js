@@ -241,6 +241,7 @@ Se sustituye la repeticion de la variable por un +=
 <p>Es una variable que se puede utilizar en cualquier parte del programa porque está definida en el programa principal, no dentro de una función.</p>
 
 <h1>Variable Local</h1>
+<p>Esta variable funciona solo si está definida o declarada dentro de una función. Si se llama fuera de ella, una vez declarada dentro de function dará un error.</p>
 
 <h1>Comandos</h1>
 <p> cmd + d= Se clica continuamente para seleccionar los mismos textos y poder hacer el reemplazo del texto de un solo</p>
@@ -433,13 +434,13 @@ mostrarTexto()
         console.log("El resultado de " + a + " + " + b + " es: " + suma )
     }
 
-    sumar (10, 3)
+sumar (10, 3)
 
     function concatenarTresCadenas(cadena1, cadena2, cadena3){
         console.log(cadena1 + " " + cadena2 + " " + cadena3);
     }
 
-    concatenarTresCadenas("Estoy", "aprendiendo", "Javascript")
+concatenarTresCadenas("Estoy", "aprendiendo", "Javascript")
 
     var miVariableGlobal = 5
 
@@ -448,5 +449,9 @@ mostrarTexto()
     }
 
     funcionPrueba();
+
+function functPrueba(){
+    var pruebaLocal = 5;
+}
 
 </script>
