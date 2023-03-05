@@ -249,6 +249,12 @@ Se sustituye la repeticion de la variable por un +=
 
 <h2>Asignacion de valores retornados</h2>
 <p>Es posible asignar el return de una funcion como valor a una variable</p>
+<p>Se declara la función, luego se asigna el nombre de la funcion como el valor de una variable y se envia a console.log el nombre de la variable, que automaticamente ejecutará la funcion</p>
+
+<h3>JSON.stringify</h3>
+<p>convierte un objeto o valor de JavaScript en una cadena de texto JSON</p>
+
+<h1>Booleanos</h1>
 
 
 
@@ -426,7 +432,7 @@ Se sustituye la repeticion de la variable por un +=
 
     var estaciones = ["Invierno", "Otoño", "Primavera"]
     estaciones.unshift("Verano")
-    console.log(estaciones)
+    console.log(estaciones) 
 
     var miListaDeCompras = [["Cereal", 2], ["Pan", 5], ["Huevos", 12], ["Galletas", 5]]
     console.log("Voy a comprar" + " " + miListaDeCompras[0][1] + " " + "unidades de " + miListaDeCompras[0][0])
@@ -496,6 +502,50 @@ function crearCadenaCaracteresMeta(lenguajeDeProgramacion){
 var miMeta = crearCadenaCaracteresMeta("Javascript")
 
 console.log(miMeta)
+
+//----------ejercicio proximo en la fila
+
+// function proximoEnLaFila(arreglo, elemento){
+//     var arreglo = [0, 1, 2, 3]
+//     var elemento = 4
+//     arreglo.push(elemento) 
+//     arreglo.shift()
+//     var arreglo2 = arreglo.shift()
+//     return arreglo2
+// }
+
+
+// console.log(proximoEnLaFila())
+
+
+// ----- resolucion correcta
+function proximoEnLaFila(arreglo, elemento){
+    arreglo.push(elemento) // eso estuvo bien, ingresa el elemento
+    return arreglo.shift() // .shift ya brinda el valor, entonces con return le puedo decir que retorne el valor tomado y se ahorra el asignar una variable que llame el valor eliminado
+}
+
+var miArreglo = [0, 1, 2, 3]
+
+console.log("Antes: " + JSON.stringify(miArreglo))
+
+console.log(proximoEnLaFila(miArreglo, 4))
+
+console.log("Despues: " + JSON.stringify(miArreglo))
+
+//---- Práctica de ejercicios
+// ejc01: Escribir una función que tome dos números como parámetros y devuelva su suma.
+
+function sumatoria(a, b){
+    var suma = a + b
+    console.log(suma)
+}
+
+sumatoria(10, 3)
+//Aprendizaje: establecer bien la estructura de la función: nombre de la funcion, corchetes, variable con la accion, mostrar en consola la variable. Ya fuera de la funcion llamar la variable y colocar los argumentos (valores entre parentesis)
+
+
+
+
 
 
 
