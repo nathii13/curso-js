@@ -242,6 +242,15 @@ Se sustituye la repeticion de la variable por un +=
 
 <h1>Variable Local</h1>
 <p>Esta variable funciona solo si está definida o declarada dentro de una función. Si se llama fuera de ella, una vez declarada dentro de function dará un error.</p>
+<P>Cuando tenemos en el código una variable local y una global, se llama la funcion y muestra el valor de la variable local, si se llama a la variable, se mostrará el valor declarado de la global.</P>
+
+<h1>Retornar un valor</h1>
+<p>Se coloca el comando "return" para devolver un valor. Este hace la función pero no muestra el resultado en la consola, como si lo hace "console.log"</p>
+
+<h2>Asignacion de valores retornados</h2>
+<p>Es posible asignar el return de una funcion como valor a una variable</p>
+
+
 
 <h1>Comandos</h1>
 <p> cmd + d= Se clica continuamente para seleccionar los mismos textos y poder hacer el reemplazo del texto de un solo</p>
@@ -452,6 +461,42 @@ concatenarTresCadenas("Estoy", "aprendiendo", "Javascript")
 
 function functPrueba(){
     var pruebaLocal = 5;
+    console.log(pruebaLocal)
 }
+
+functPrueba();
+//Si yo llamo esta variable fuera de la funcion, va a generar un error en consola de que no está definida.
+//console.log(pruebaLocal)
+
+
+//En este caso, aunque la variable tenga el mismo nombre no va a generar error porque están en ambitos diferentes. Se llama a traves de la funcion o bien la variable.
+var nombreTest = "Mundo"
+
+function mostrarNombre() {
+    var nombreTest = "Hola"
+    console.log(nombreTest)
+} 
+
+mostrarNombre()
+
+console.log(nombreTest)
+
+function sumaDoble(a, b){
+    return a + b
+}
+
+sumaDoble(10, 3)
+
+console.log(sumaDoble(10, 3))
+
+function crearCadenaCaracteresMeta(lenguajeDeProgramacion){
+    return "Mi meta es aprender " + lenguajeDeProgramacion
+}
+
+var miMeta = crearCadenaCaracteresMeta("Javascript")
+
+console.log(miMeta)
+
+
 
 </script>
