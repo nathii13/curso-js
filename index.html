@@ -255,8 +255,16 @@ Se sustituye la repeticion de la variable por un +=
 <p>convierte un objeto o valor de JavaScript en una cadena de texto JSON</p>
 
 <h1>Booleanos</h1>
+<p>en JS, los valores true y false deben ir siempre en minúscula</p>
 
+<h3>Operador de igualdad</h3>
+<p> el operador "==" se utiliza para comparar si dos expresiones son iguales, es deir, si es true que son iguales. Importante: no funciona para comparar arreglos, porque aunque tengan los mismos elementos, indicará que es falso.</p>
 
+<h3>Operador de igualdad estricta</h3>
+<p>Se utiliza el operador === para comparar expresiones que sean iguales a nivel de valor y de tipo de dato</p>
+
+<h3>Operador de desigualdad</h3>
+<p>Se utiliza != para ver si dos valores son diferentes. Dara como resultado true si efectivamente son diferentes y dara false si los valores comparados son iguales. </p>
 
 <h1>Comandos</h1>
 <p> cmd + d= Se clica continuamente para seleccionar los mismos textos y poder hacer el reemplazo del texto de un solo</p>
@@ -543,10 +551,19 @@ function sumatoria(a, b){
 sumatoria(10, 3)
 //Aprendizaje: establecer bien la estructura de la función: nombre de la funcion, corchetes, variable con la accion, mostrar en consola la variable. Ya fuera de la funcion llamar la variable y colocar los argumentos (valores entre parentesis)
 
+console.log(5 == 5) // igual. Esto dará como resultado True
 
+console.log(5 == "5") // igual. Esto dará como resultado true, porque el valor es el mismo aunque no sea igual el tipo de dato.
 
+console.log(5 === "5") // estrictamente igual. Esto dará falso porque aunque tienen el mismo valor, no son el mismo tipo de dato "numero === string"
+ 
+console.log(5 != 7) // desigualdad. True, porque efectivamente 5 es diferente de 7
 
+console.log(5 !== "5") // estrictamente desigualdad. True, porque efectivamente el tipo de dato de 5 es diferente al de "5"
 
+console.log(6 > 1) // true, efectivamente 6 es mayor que 1
+
+console.log("acb" > "abc"), compara las letras mas cercanas a Z y las toma como mayores.
 
 
 </script>
