@@ -272,6 +272,23 @@ Se sustituye la repeticion de la variable por un +=
 <h3>mayor o igual</h3>
 <p> >= </p>
 
+<h3>Menor que</h3>
+<p> "<" </p>
+
+<h3>Menor o igual que</h3>
+<p> "<=" </p>
+
+<h3>Operador lógico AND</h3>
+<p>en JS es un doble ampersand &&. La expresion solo es verdadera cuando ambos operandos son true.</p>
+
+<h3>Operador logico "or"</h3>
+<p>el simbolo es doble barra vertical || la expresion es verdadera si uno o ambos operandos es true. Si ambos son false, el resultado serà false.</p>
+
+<h3>Operador lógico "not"</h3>
+<p>se utiliza el simbolo ! junto con la expresion !(x). Esta expresiòn indica que es diferente de la que está siendo comparada y devuelve el valor inverso al indicado.</p>
+<p>var a = 3</p>
+<p>console.log(!(a < 7))</p>
+<p>(!(a < 7)), la expresion entre parentesis en verdadera ya que a es menor que 7, pero el valor que se almacenarà es false, porque está indicando el valor contrario.</p>
 
 <h1>Comandos</h1>
 <p> cmd + d= Se clica continuamente para seleccionar los mismos textos y poder hacer el reemplazo del texto de un solo</p>
@@ -578,4 +595,19 @@ var a = 15
 var b = 2
 
 console.log(b > a) // false. El valor de la variable b es menor al de a
+
+//operador and
+var z = 8
+console.log((z > 5) && (z < 10))
+
+
+// operador or
+var x = 6
+console.log((x > 3) || (x < 10))
+
+var w = 3
+console.log((w == 3) || (w < 1))
+
+
+
 </script>
